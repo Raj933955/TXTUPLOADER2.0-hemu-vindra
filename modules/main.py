@@ -31,17 +31,17 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("**𝙃𝙄𝙄** ┈━═𝙈𝙮 𝙁𝙧𝙞𝙚𝙣𝙙═━┈😎\n\n I Am A Bot For Download Links From Your **.TXT** File And Then Upload That File Om Telegram So Basically If You Want To Use Me First Send Me Hidden Command And Then Follow Few Steps..")
+    editable = await m.reply_text("**𝙃𝙄𝙄** ┈━═𝙈𝙮 𝙁𝙧𝙞𝙚𝙣𝙙═━┈😎\n\n I Am A Bot For Download Links From Your **.TXT** File And Then Upload That File Om Telegram So Basically If You Want To Use Me First Send Me Hidden Command And Then Follow Few Steps @sccwaleyarr..")
 
 
-@bot.on_message(filters.command("exit"))
+@bot.on_message(filters.command("Stop"))
 async def restart_handler(_, m):
     await m.reply_text("**Stopped**🚦", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
 
-@bot.on_message(filters.command(["papa"]))
+@bot.on_message(filters.command(["Daku"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('𝙏𝙤 𝙙𝙤𝙬𝙣𝙡𝙤𝙖𝙙 𝙖 𝙏𝙓𝙏 𝙛𝙞𝙡𝙚 𝙨𝙚𝙣𝙙 𝙝𝙚𝙧𝙚 ⚡️')
     input: Message = await bot.listen(editable.chat.id)
@@ -100,7 +100,7 @@ async def account_login(bot: Client, m: Message):
     
     
 
-    await editable.edit("Now Enter A Caption to add caption on your uploaded file\n ex: `@official_virendraverma`")
+    await editable.edit("Now Enter A Caption to add caption on your uploaded file\n ex: ` @sccwaleyarr `")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -206,7 +206,7 @@ async def account_login(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("**𝘿𝙊𝙉𝙀 𝘽𝙊𝙎𝙎😎**")
+    await m.reply_text("**𝘿𝙊𝙉𝙀🚦🚦🛑🛑**")
 
 
 bot.run()
